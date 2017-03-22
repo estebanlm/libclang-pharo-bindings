@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalStructure",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_CLASSCURSOR",
+		"OFFSET_CLASSLOC",
+		"OFFSET_CONTAINERINFO",
+		"OFFSET_OBJCCLASS",
+		"OFFSET_PROTOCOLS"
+	],
+	"instvars" : [ ],
+	"name" : "CXIdxObjCCategoryDeclInfoStruct",
+	"type" : "normal"
+}

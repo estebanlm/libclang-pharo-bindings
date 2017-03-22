@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "TLibClang classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"handle"
+	],
+	"name" : "CLExternalObject",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "TLibClang",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "LibClang-Core"
+}

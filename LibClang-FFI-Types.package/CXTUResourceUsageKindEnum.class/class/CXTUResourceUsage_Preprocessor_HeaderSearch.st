@@ -1,0 +1,4 @@
+accessing enum
+CXTUResourceUsage_Preprocessor_HeaderSearch
+	"This method was automatically generated"
+	^ CXTUResourceUsage_Preprocessor_HeaderSearch

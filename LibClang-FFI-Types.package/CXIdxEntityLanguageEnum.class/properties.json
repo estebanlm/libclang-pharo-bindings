@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalEnumeration",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"CXIdxEntityLang_C",
+		"CXIdxEntityLang_CXX",
+		"CXIdxEntityLang_None",
+		"CXIdxEntityLang_ObjC"
+	],
+	"instvars" : [ ],
+	"name" : "CXIdxEntityLanguageEnum",
+	"type" : "normal"
+}

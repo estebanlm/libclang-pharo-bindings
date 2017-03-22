@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalStructure",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_FILE",
+		"OFFSET_ISMODULE",
+		"OFFSET_LOC"
+	],
+	"instvars" : [ ],
+	"name" : "CXIdxImportedASTFileInfoStruct",
+	"type" : "normal"
+}

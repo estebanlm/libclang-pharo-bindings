@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalEnumeration",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"CXVisit_Break",
+		"CXVisit_Continue"
+	],
+	"instvars" : [ ],
+	"name" : "CXVisitorResultEnum",
+	"type" : "normal"
+}

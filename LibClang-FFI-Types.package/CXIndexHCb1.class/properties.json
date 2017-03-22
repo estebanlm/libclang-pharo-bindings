@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CXFFICallback",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CXIndexHCb1",
+	"type" : "normal"
+}

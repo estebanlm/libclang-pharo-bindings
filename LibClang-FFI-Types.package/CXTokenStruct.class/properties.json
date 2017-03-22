@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalStructure",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_INT_DATA1",
+		"OFFSET_INT_DATA2",
+		"OFFSET_INT_DATA3",
+		"OFFSET_INT_DATA4",
+		"OFFSET_PTR_DATA"
+	],
+	"instvars" : [ ],
+	"name" : "CXTokenStruct",
+	"type" : "normal"
+}

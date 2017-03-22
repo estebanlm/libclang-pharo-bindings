@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalStructure",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_NUMPROTOCOLS",
+		"OFFSET_PROTOCOLS"
+	],
+	"instvars" : [ ],
+	"name" : "CXIdxObjCProtocolRefListInfoStruct",
+	"type" : "normal"
+}

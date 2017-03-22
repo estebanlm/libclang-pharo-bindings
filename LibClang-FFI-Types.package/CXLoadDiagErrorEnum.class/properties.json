@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalEnumeration",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"CXLoadDiag_CannotLoad",
+		"CXLoadDiag_InvalidFile",
+		"CXLoadDiag_None",
+		"CXLoadDiag_Unknown"
+	],
+	"instvars" : [ ],
+	"name" : "CXLoadDiagErrorEnum",
+	"type" : "normal"
+}

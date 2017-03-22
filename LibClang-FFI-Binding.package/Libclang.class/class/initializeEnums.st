@@ -1,0 +1,22 @@
+class initialization
+initializeEnums
+	CXChildVisitResultEnum initialize.
+	CXIdxEntityLanguageEnum initialize.
+	CXDiagnosticSeverityEnum initialize.
+	CXCursorKindEnum initialize.
+	CXCompletionChunkKindEnum initialize.
+	CXTUResourceUsageKindEnum initialize.
+	CXIdxEntityKindEnum initialize.
+	CXAvailabilityKindEnum initialize.
+	CXTypeKindEnum initialize.
+	CXVisitorResultEnum initialize.
+	CXIdxAttrKindEnum initialize.
+	CXIdxEntityCXXTemplateKindEnum initialize.
+	CXCallingConvEnum initialize.
+	CXCXXAccessSpecifierEnum initialize.
+	CXLanguageKindEnum initialize.
+	CXLinkageKindEnum initialize.
+	CXIdxEntityRefKindEnum initialize.
+	CXTokenKindEnum initialize.
+	CXLoadDiagErrorEnum initialize.
+	CXIdxObjCContainerKindEnum initialize.

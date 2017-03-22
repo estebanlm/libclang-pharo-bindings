@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalEnumeration",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"CXAvailability_Available",
+		"CXAvailability_Deprecated",
+		"CXAvailability_NotAccessible",
+		"CXAvailability_NotAvailable"
+	],
+	"instvars" : [ ],
+	"name" : "CXAvailabilityKindEnum",
+	"type" : "normal"
+}

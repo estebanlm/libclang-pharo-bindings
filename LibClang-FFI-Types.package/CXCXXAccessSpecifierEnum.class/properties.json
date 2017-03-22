@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalEnumeration",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"CX_CXXInvalidAccessSpecifier",
+		"CX_CXXPrivate",
+		"CX_CXXProtected",
+		"CX_CXXPublic"
+	],
+	"instvars" : [ ],
+	"name" : "CXCXXAccessSpecifierEnum",
+	"type" : "normal"
+}

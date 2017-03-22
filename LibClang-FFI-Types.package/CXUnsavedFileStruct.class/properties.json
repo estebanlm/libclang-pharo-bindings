@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalStructure",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_CONTENTS",
+		"OFFSET_FILENAME",
+		"OFFSET_LENGTH"
+	],
+	"instvars" : [ ],
+	"name" : "CXUnsavedFileStruct",
+	"type" : "normal"
+}

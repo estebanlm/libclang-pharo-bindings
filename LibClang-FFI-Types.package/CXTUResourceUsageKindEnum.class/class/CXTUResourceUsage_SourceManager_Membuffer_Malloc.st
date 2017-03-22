@@ -1,0 +1,4 @@
+accessing enum
+CXTUResourceUsage_SourceManager_Membuffer_Malloc
+	"This method was automatically generated"
+	^ CXTUResourceUsage_SourceManager_Membuffer_Malloc

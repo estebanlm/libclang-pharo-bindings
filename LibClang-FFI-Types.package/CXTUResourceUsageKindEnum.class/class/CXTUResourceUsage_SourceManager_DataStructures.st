@@ -1,0 +1,4 @@
+accessing enum
+CXTUResourceUsage_SourceManager_DataStructures
+	"This method was automatically generated"
+	^ CXTUResourceUsage_SourceManager_DataStructures

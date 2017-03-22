@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalStructure",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_COMPLETIONSTRING",
+		"OFFSET_CURSORKIND"
+	],
+	"instvars" : [ ],
+	"name" : "CXCompletionResultStruct",
+	"type" : "normal"
+}

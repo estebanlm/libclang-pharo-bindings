@@ -1,0 +1,17 @@
+{
+	"classtraitcomposition" : "TLibClang classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"handle",
+		"excludePCHDecls",
+		"diags"
+	],
+	"name" : "CLIndex",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "TLibClang",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "LibClang-Core"
+}

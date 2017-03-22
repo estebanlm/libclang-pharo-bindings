@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalStructure",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_ATTRINFO",
+		"OFFSET_CLASSCURSOR",
+		"OFFSET_CLASSLOC",
+		"OFFSET_OBJCCLASS"
+	],
+	"instvars" : [ ],
+	"name" : "CXIdxIBOutletCollectionAttrInfoStruct",
+	"type" : "normal"
+}

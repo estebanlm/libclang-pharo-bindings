@@ -1,0 +1,32 @@
+class initialization
+initializeStructs
+	CXIdxAttrInfoStruct rebuildFieldAccessors.
+	CXIndexerCallbacksStruct rebuildFieldAccessors.
+	CXStringStruct rebuildFieldAccessors.
+	CXUnsavedFileStruct rebuildFieldAccessors.
+	CXCompletionResultStruct rebuildFieldAccessors.
+	CXIdxLocStruct rebuildFieldAccessors.
+	CXTokenStruct rebuildFieldAccessors.
+	CXCursorAndRangeVisitorStruct rebuildFieldAccessors.
+	CXIdxContainerInfoStruct rebuildFieldAccessors.
+	CXSourceRangeStruct rebuildFieldAccessors.
+	CXCodeCompleteResultsStruct rebuildFieldAccessors.
+	CXTypeStruct rebuildFieldAccessors.
+	CXTUResourceUsageEntryStruct rebuildFieldAccessors.
+	CXTUResourceUsageStruct rebuildFieldAccessors.
+	CXCursorStruct rebuildFieldAccessors.
+	CXIdxIncludedFileInfoStruct rebuildFieldAccessors.
+	CXSourceLocationStruct rebuildFieldAccessors.
+	CXIdxImportedASTFileInfoStruct rebuildFieldAccessors.
+	CXIdxDeclInfoStruct rebuildFieldAccessors.
+	CXIdxObjCProtocolRefInfoStruct rebuildFieldAccessors.
+	CXIdxIBOutletCollectionAttrInfoStruct rebuildFieldAccessors.
+	CXIdxBaseClassInfoStruct rebuildFieldAccessors.
+	CXIdxObjCProtocolRefListInfoStruct rebuildFieldAccessors.
+	CXIdxObjCContainerDeclInfoStruct rebuildFieldAccessors.
+	CXIdxEntityRefInfoStruct rebuildFieldAccessors.
+	CXIdxObjCPropertyDeclInfoStruct rebuildFieldAccessors.
+	CXIdxObjCInterfaceDeclInfoStruct rebuildFieldAccessors.
+	CXIdxObjCCategoryDeclInfoStruct rebuildFieldAccessors.
+	CXIdxCXXClassDeclInfoStruct rebuildFieldAccessors.
+	CXIdxEntityInfoStruct rebuildFieldAccessors.

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "CLExternalObject",
+	"category" : "LibClang-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"filename",
+		"index",
+		"options",
+		"numDiagnostics"
+	],
+	"name" : "CLTranslationUnit",
+	"type" : "normal"
+}

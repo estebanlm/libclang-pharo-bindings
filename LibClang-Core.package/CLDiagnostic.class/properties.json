@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CLExternalObject",
+	"category" : "LibClang-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CLDiagnostic",
+	"type" : "normal"
+}

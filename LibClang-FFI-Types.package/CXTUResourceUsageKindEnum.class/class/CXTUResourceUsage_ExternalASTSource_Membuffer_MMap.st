@@ -1,0 +1,4 @@
+accessing enum
+CXTUResourceUsage_ExternalASTSource_Membuffer_MMap
+	"This method was automatically generated"
+	^ CXTUResourceUsage_ExternalASTSource_Membuffer_MMap

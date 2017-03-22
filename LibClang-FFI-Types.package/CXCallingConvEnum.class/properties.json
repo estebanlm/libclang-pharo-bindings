@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalEnumeration",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"CXCallingConv_AAPCS",
+		"CXCallingConv_AAPCS_VFP",
+		"CXCallingConv_C",
+		"CXCallingConv_Default",
+		"CXCallingConv_Invalid",
+		"CXCallingConv_Unexposed",
+		"CXCallingConv_X86FastCall",
+		"CXCallingConv_X86Pascal",
+		"CXCallingConv_X86StdCall",
+		"CXCallingConv_X86ThisCall"
+	],
+	"instvars" : [ ],
+	"name" : "CXCallingConvEnum",
+	"type" : "normal"
+}

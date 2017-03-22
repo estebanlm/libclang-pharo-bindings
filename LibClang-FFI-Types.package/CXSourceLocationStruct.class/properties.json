@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalStructure",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_INT_DATA",
+		"OFFSET_PTR_DATA1",
+		"OFFSET_PTR_DATA2"
+	],
+	"instvars" : [ ],
+	"name" : "CXSourceLocationStruct",
+	"type" : "normal"
+}

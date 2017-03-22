@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalEnumeration",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"CXLanguage_C",
+		"CXLanguage_CPlusPlus",
+		"CXLanguage_Invalid",
+		"CXLanguage_ObjC"
+	],
+	"instvars" : [ ],
+	"name" : "CXLanguageKindEnum",
+	"type" : "normal"
+}

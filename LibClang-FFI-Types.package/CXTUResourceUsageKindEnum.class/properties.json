@@ -1,0 +1,30 @@
+{
+	"commentStamp" : "",
+	"super" : "CXExternalEnumeration",
+	"category" : "LibClang-FFI-Types",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"CXTUResourceUsage_AST",
+		"CXTUResourceUsage_AST_SideTables",
+		"CXTUResourceUsage_ExternalASTSource_Membuffer_MMap",
+		"CXTUResourceUsage_ExternalASTSource_Membuffer_Malloc",
+		"CXTUResourceUsage_First",
+		"CXTUResourceUsage_GlobalCompletionResults",
+		"CXTUResourceUsage_Identifiers",
+		"CXTUResourceUsage_Last",
+		"CXTUResourceUsage_MEMORY_IN_BYTES_BEGIN",
+		"CXTUResourceUsage_MEMORY_IN_BYTES_END",
+		"CXTUResourceUsage_PreprocessingRecord",
+		"CXTUResourceUsage_Preprocessor",
+		"CXTUResourceUsage_Preprocessor_HeaderSearch",
+		"CXTUResourceUsage_Selectors",
+		"CXTUResourceUsage_SourceManagerContentCache",
+		"CXTUResourceUsage_SourceManager_DataStructures",
+		"CXTUResourceUsage_SourceManager_Membuffer_MMap",
+		"CXTUResourceUsage_SourceManager_Membuffer_Malloc"
+	],
+	"instvars" : [ ],
+	"name" : "CXTUResourceUsageKindEnum",
+	"type" : "normal"
+}
