@@ -47,4 +47,10 @@ enumDecl
 	CXType_FunctionProto 111
 	CXType_ConstantArray 112
 	CXType_Vector 113
+	CXType_IncompleteArray 114
+  	CXType_VariableArray 115
+  	CXType_DependentSizedArray 116
+  	CXType_MemberPointer 117
+  	CXType_Auto  118	
+	CXType_Elaborated 119
 )

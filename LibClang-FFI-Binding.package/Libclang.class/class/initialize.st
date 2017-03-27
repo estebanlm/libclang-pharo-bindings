@@ -1,8 +1,8 @@
 class initialization
 initialize
 	self initializeTypeMap.
-	self initializeStructs.
 	self initializeEnums.
+	self initializeStructs.
 	self initializeCallbacks.
 	self initializeArrays.
 	self initializeUnions.

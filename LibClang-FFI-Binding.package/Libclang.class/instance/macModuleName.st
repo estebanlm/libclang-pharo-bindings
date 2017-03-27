@@ -1,4 +1,4 @@
 library path
 macModuleName
-	^ './clang/lib/libclang.dylib' asFileReference fullName
+	^ './out/lib/libclang.dylib' asFileReference fullName
 	

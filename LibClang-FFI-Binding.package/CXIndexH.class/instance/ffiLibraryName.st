@@ -1,3 +1,3 @@
 library path
 ffiLibraryName
-	^ Libclang
+	^ LibClang

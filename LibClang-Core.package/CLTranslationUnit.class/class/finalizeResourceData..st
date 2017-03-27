@@ -1,3 +1,4 @@
 finalization
 finalizeResourceData: handle
-	handle isNull ifFalse: [self clang disposeTranslationUnit: handle]
+	handle isNull ifTrue: [ ^ self ].
+	self clang disposeTranslationUnit: handle.

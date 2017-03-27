@@ -60,6 +60,6 @@
 		"TypeMap"
 	],
 	"instvars" : [ ],
-	"name" : "Libclang",
+	"name" : "LibClang",
 	"type" : "normal"
 }

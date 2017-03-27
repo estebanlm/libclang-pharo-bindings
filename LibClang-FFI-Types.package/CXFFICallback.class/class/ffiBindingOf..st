@@ -1,3 +1,3 @@
 nativeboost types
 ffiBindingOf: aTypeName
-	^ Libclang ffiBindingOf: aTypeName
+	^ LibClang ffiBindingOf: aTypeName
