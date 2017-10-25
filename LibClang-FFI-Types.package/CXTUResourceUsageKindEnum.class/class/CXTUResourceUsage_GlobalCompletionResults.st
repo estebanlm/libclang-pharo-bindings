@@ -1,4 +1,0 @@
-accessing enum
-CXTUResourceUsage_GlobalCompletionResults
-	"This method was automatically generated"
-	^ CXTUResourceUsage_GlobalCompletionResults

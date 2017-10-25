@@ -1,4 +1,0 @@
-accessing enum
-CXTUResourceUsage_MEMORY_IN_BYTES_BEGIN
-	"This method was automatically generated"
-	^ CXTUResourceUsage_MEMORY_IN_BYTES_BEGIN

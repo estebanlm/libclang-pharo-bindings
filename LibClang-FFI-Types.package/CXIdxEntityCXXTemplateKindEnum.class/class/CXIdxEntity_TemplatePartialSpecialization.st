@@ -1,4 +1,0 @@
-accessing enum
-CXIdxEntity_TemplatePartialSpecialization
-	"This method was automatically generated"
-	^ CXIdxEntity_TemplatePartialSpecialization

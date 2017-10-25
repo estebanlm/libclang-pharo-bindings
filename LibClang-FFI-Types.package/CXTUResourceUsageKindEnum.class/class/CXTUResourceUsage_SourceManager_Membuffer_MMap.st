@@ -1,4 +1,0 @@
-accessing enum
-CXTUResourceUsage_SourceManager_Membuffer_MMap
-	"This method was automatically generated"
-	^ CXTUResourceUsage_SourceManager_Membuffer_MMap
