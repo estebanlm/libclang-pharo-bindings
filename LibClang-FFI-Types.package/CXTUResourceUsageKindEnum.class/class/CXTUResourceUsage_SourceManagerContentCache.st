@@ -1,4 +1,0 @@
-accessing enum
-CXTUResourceUsage_SourceManagerContentCache
-	"This method was automatically generated"
-	^ CXTUResourceUsage_SourceManagerContentCache

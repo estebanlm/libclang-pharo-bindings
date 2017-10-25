@@ -1,4 +1,0 @@
-accessing enum
-CXTUResourceUsage_ExternalASTSource_Membuffer_Malloc
-	"This method was automatically generated"
-	^ CXTUResourceUsage_ExternalASTSource_Membuffer_Malloc
