@@ -11,10 +11,12 @@ Class {
 
 { #category : #accessing }
 CXUnsavedFileStruct class >> fieldsDesc [
-	^#(
+	"self rebuildFieldAccessors"
+
+	^ #(
 	char *Filename;
 	char *Contents;
-	uint32 Length;
+	ulong Length;
 	)
 ]
 
@@ -45,11 +47,11 @@ CXUnsavedFileStruct >> Filename: anObject [
 { #category : #'accessing structure variables' }
 CXUnsavedFileStruct >> Length [
 	"This method was automatically generated"
-	^handle unsignedLongAt: OFFSET_LENGTH
+	^handle platformUnsignedLongAt: OFFSET_LENGTH
 ]
 
 { #category : #'accessing structure variables' }
 CXUnsavedFileStruct >> Length: anObject [
 	"This method was automatically generated"
-	handle unsignedLongAt: OFFSET_LENGTH put: anObject
+	^handle platformUnsignedLongAt: OFFSET_LENGTH put: anObject
 ]

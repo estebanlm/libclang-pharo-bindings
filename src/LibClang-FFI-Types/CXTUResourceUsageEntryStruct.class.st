@@ -10,22 +10,24 @@ Class {
 
 { #category : #accessing }
 CXTUResourceUsageEntryStruct class >> fieldsDesc [
+	"self rebuildFieldAccessors"
+
 	^#(
 	CXTUResourceUsageKindEnum kind;
-	uint32 amount;
+	ulong amount;
 	)
 ]
 
 { #category : #'accessing structure variables' }
 CXTUResourceUsageEntryStruct >> amount [
 	"This method was automatically generated"
-	^handle unsignedLongAt: OFFSET_AMOUNT
+	^handle platformUnsignedLongAt: OFFSET_AMOUNT
 ]
 
 { #category : #'accessing structure variables' }
 CXTUResourceUsageEntryStruct >> amount: anObject [
 	"This method was automatically generated"
-	handle unsignedLongAt: OFFSET_AMOUNT put: anObject
+	^handle platformUnsignedLongAt: OFFSET_AMOUNT put: anObject
 ]
 
 { #category : #'accessing structure variables' }

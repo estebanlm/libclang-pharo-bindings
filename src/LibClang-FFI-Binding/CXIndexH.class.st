@@ -126,7 +126,7 @@ CXIndexH >> codeCompleteGetContainerUSR: results [
 
 { #category : #'foreign interface' }
 CXIndexH >> codeCompleteGetContexts: results [ 
-	^ self ffiCall: #(uint64 clang_codeCompleteGetContexts(CXCodeCompleteResults *results))
+	^ self ffiCall: #(longlong clang_codeCompleteGetContexts(CXCodeCompleteResults *results))
 ]
 
 { #category : #'foreign interface' }
@@ -339,7 +339,7 @@ CXIndexH >> getArrayElementType: t [
 
 { #category : #'foreign interface' }
 CXIndexH >> getArraySize: t [ 
-	^ self ffiCall: #(int64 clang_getArraySize(CXType t))
+	^ self ffiCall: #(longlong clang_getArraySize(CXType t))
 ]
 
 { #category : #'foreign interface' }
@@ -606,12 +606,12 @@ CXIndexH >> getElementType: t [
 
 { #category : #'foreign interface' }
 CXIndexH >> getEnumConstantDeclUnsignedValue: c [ 
-	^ self ffiCall: #(uint64 clang_getEnumConstantDeclUnsignedValue(CXCursor c))
+	^ self ffiCall: #(ulonglong clang_getEnumConstantDeclUnsignedValue(CXCursor c))
 ]
 
 { #category : #'foreign interface' }
 CXIndexH >> getEnumConstantDeclValue: c [ 
-	^ self ffiCall: #(int64 clang_getEnumConstantDeclValue(CXCursor c))
+	^ self ffiCall: #(longlong clang_getEnumConstantDeclValue(CXCursor c))
 ]
 
 { #category : #'foreign interface' }
@@ -718,7 +718,7 @@ CXIndexH >> getNumDiagnosticsInSet: diags [
 
 { #category : #'foreign interface' }
 CXIndexH >> getNumElements: t [ 
-	^ self ffiCall: #(int64 clang_getNumElements(CXType t))
+	^ self ffiCall: #(longlong clang_getNumElements(CXType t))
 ]
 
 { #category : #'foreign interface' }
