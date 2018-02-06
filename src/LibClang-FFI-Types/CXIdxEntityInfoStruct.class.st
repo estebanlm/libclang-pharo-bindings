@@ -55,13 +55,13 @@ CXIdxEntityInfoStruct >> attributes: anObject [
 { #category : #'accessing structure variables' }
 CXIdxEntityInfoStruct >> cursor [
 	"This method was automatically generated"
-	^CXCursorStruct fromHandle: (handle referenceStructAt: OFFSET_CURSOR length: 20)
+	^ CXCursorStruct fromHandle: (handle referenceStructAt: OFFSET_CURSOR length: CXCursorStruct byteSize)
 ]
 
 { #category : #'accessing structure variables' }
 CXIdxEntityInfoStruct >> cursor: anObject [
 	"This method was automatically generated"
-	handle structAt: OFFSET_CURSOR put: anObject getHandle length: 20.
+	handle structAt: OFFSET_CURSOR put: anObject getHandle length: CXCursorStruct byteSize
 ]
 
 { #category : #'accessing structure variables' }

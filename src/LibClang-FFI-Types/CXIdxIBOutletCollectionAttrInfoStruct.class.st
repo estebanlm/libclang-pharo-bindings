@@ -36,25 +36,25 @@ CXIdxIBOutletCollectionAttrInfoStruct >> attrInfo: anObject [
 { #category : #'accessing structure variables' }
 CXIdxIBOutletCollectionAttrInfoStruct >> classCursor [
 	"This method was automatically generated"
-	^CXCursorStruct fromHandle: (handle referenceStructAt: OFFSET_CLASSCURSOR length: 20)
+	^ CXCursorStruct fromHandle: (handle referenceStructAt: OFFSET_CLASSCURSOR length: CXCursorStruct byteSize)
 ]
 
 { #category : #'accessing structure variables' }
 CXIdxIBOutletCollectionAttrInfoStruct >> classCursor: anObject [
 	"This method was automatically generated"
-	handle structAt: OFFSET_CLASSCURSOR put: anObject getHandle length: 20.
+	handle structAt: OFFSET_CLASSCURSOR put: anObject getHandle length: CXCursorStruct byteSize
 ]
 
 { #category : #'accessing structure variables' }
 CXIdxIBOutletCollectionAttrInfoStruct >> classLoc [
 	"This method was automatically generated"
-	^CXIdxLocStruct fromHandle: (handle referenceStructAt: OFFSET_CLASSLOC length: 12)
+	^ CXIdxLocStruct fromHandle: (handle referenceStructAt: OFFSET_CLASSLOC length: CXIdxLocStruct byteSize)
 ]
 
 { #category : #'accessing structure variables' }
 CXIdxIBOutletCollectionAttrInfoStruct >> classLoc: anObject [
 	"This method was automatically generated"
-	handle structAt: OFFSET_CLASSLOC put: anObject getHandle length: 12.
+	handle structAt: OFFSET_CLASSLOC put: anObject getHandle length: CXIdxLocStruct byteSize
 ]
 
 { #category : #'accessing structure variables' }

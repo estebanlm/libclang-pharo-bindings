@@ -38,5 +38,9 @@ CXCursorAndRangeVisitorStruct >> visit [
 { #category : #'accessing structure variables' }
 CXCursorAndRangeVisitorStruct >> visit: anObject [
 	"This method was automatically generated"
-	handle pointerAt: OFFSET_VISIT put: (ExternalAddress fromAddress: anObject thunk address)
+	handle 
+		pointerAt: OFFSET_VISIT
+		put: (anObject 
+			ifNotNil: [ ExternalAddress fromAddress: anObject thunk address ]
+			ifNil: [ ExternalAddress null ])
 ]

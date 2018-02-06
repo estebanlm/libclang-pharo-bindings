@@ -38,7 +38,11 @@ CXIndexerCallbacksStruct >> abortQuery [
 { #category : #'accessing structure variables' }
 CXIndexerCallbacksStruct >> abortQuery: anObject [
 	"This method was automatically generated"
-	handle pointerAt: OFFSET_ABORTQUERY put: (ExternalAddress fromAddress: anObject thunk address)
+	handle 
+		pointerAt: OFFSET_ABORTQUERY
+		put: (anObject 
+			ifNotNil: [ ExternalAddress fromAddress: anObject thunk address ]
+			ifNil: [ ExternalAddress null ])
 ]
 
 { #category : #'accessing structure variables' }
@@ -50,7 +54,11 @@ CXIndexerCallbacksStruct >> diagnostic [
 { #category : #'accessing structure variables' }
 CXIndexerCallbacksStruct >> diagnostic: anObject [
 	"This method was automatically generated"
-	handle pointerAt: OFFSET_DIAGNOSTIC put: (ExternalAddress fromAddress: anObject thunk address)
+	handle 
+		pointerAt: OFFSET_DIAGNOSTIC
+		put: (anObject 
+			ifNotNil: [ ExternalAddress fromAddress: anObject thunk address ]
+			ifNil: [ ExternalAddress null ])
 ]
 
 { #category : #'accessing structure variables' }
@@ -62,7 +70,11 @@ CXIndexerCallbacksStruct >> enteredMainFile [
 { #category : #'accessing structure variables' }
 CXIndexerCallbacksStruct >> enteredMainFile: anObject [
 	"This method was automatically generated"
-	handle pointerAt: OFFSET_ENTEREDMAINFILE put: (ExternalAddress fromAddress: anObject thunk address)
+	handle 
+		pointerAt: OFFSET_ENTEREDMAINFILE
+		put: (anObject 
+			ifNotNil: [ ExternalAddress fromAddress: anObject thunk address ]
+			ifNil: [ ExternalAddress null ])
 ]
 
 { #category : #'accessing structure variables' }
@@ -74,7 +86,11 @@ CXIndexerCallbacksStruct >> importedASTFile [
 { #category : #'accessing structure variables' }
 CXIndexerCallbacksStruct >> importedASTFile: anObject [
 	"This method was automatically generated"
-	handle pointerAt: OFFSET_IMPORTEDASTFILE put: (ExternalAddress fromAddress: anObject thunk address)
+	handle 
+		pointerAt: OFFSET_IMPORTEDASTFILE
+		put: (anObject 
+			ifNotNil: [ ExternalAddress fromAddress: anObject thunk address ]
+			ifNil: [ ExternalAddress null ])
 ]
 
 { #category : #'accessing structure variables' }
@@ -86,7 +102,11 @@ CXIndexerCallbacksStruct >> indexDeclaration [
 { #category : #'accessing structure variables' }
 CXIndexerCallbacksStruct >> indexDeclaration: anObject [
 	"This method was automatically generated"
-	handle pointerAt: OFFSET_INDEXDECLARATION put: (ExternalAddress fromAddress: anObject thunk address)
+	handle 
+		pointerAt: OFFSET_INDEXDECLARATION
+		put: (anObject 
+			ifNotNil: [ ExternalAddress fromAddress: anObject thunk address ]
+			ifNil: [ ExternalAddress null ])
 ]
 
 { #category : #'accessing structure variables' }
@@ -98,7 +118,11 @@ CXIndexerCallbacksStruct >> indexEntityReference [
 { #category : #'accessing structure variables' }
 CXIndexerCallbacksStruct >> indexEntityReference: anObject [
 	"This method was automatically generated"
-	handle pointerAt: OFFSET_INDEXENTITYREFERENCE put: (ExternalAddress fromAddress: anObject thunk address)
+	handle 
+		pointerAt: OFFSET_INDEXENTITYREFERENCE
+		put: (anObject 
+			ifNotNil: [ ExternalAddress fromAddress: anObject thunk address ]
+			ifNil: [ ExternalAddress null ])
 ]
 
 { #category : #'accessing structure variables' }
@@ -110,7 +134,11 @@ CXIndexerCallbacksStruct >> ppIncludedFile [
 { #category : #'accessing structure variables' }
 CXIndexerCallbacksStruct >> ppIncludedFile: anObject [
 	"This method was automatically generated"
-	handle pointerAt: OFFSET_PPINCLUDEDFILE put: (ExternalAddress fromAddress: anObject thunk address)
+	handle 
+		pointerAt: OFFSET_PPINCLUDEDFILE
+		put: (anObject 
+			ifNotNil: [ ExternalAddress fromAddress: anObject thunk address ]
+			ifNil: [ ExternalAddress null ])
 ]
 
 { #category : #'accessing structure variables' }
@@ -122,5 +150,9 @@ CXIndexerCallbacksStruct >> startedTranslationUnit [
 { #category : #'accessing structure variables' }
 CXIndexerCallbacksStruct >> startedTranslationUnit: anObject [
 	"This method was automatically generated"
-	handle pointerAt: OFFSET_STARTEDTRANSLATIONUNIT put: (ExternalAddress fromAddress: anObject thunk address)
+	handle 
+		pointerAt: OFFSET_STARTEDTRANSLATIONUNIT
+		put: (anObject 
+			ifNotNil: [ ExternalAddress fromAddress: anObject thunk address ]
+			ifNil: [ ExternalAddress null ])
 ]

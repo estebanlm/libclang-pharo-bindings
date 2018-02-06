@@ -40,13 +40,13 @@ CXIdxEntityRefInfoStruct >> container: anObject [
 { #category : #'accessing structure variables' }
 CXIdxEntityRefInfoStruct >> cursor [
 	"This method was automatically generated"
-	^CXCursorStruct fromHandle: (handle referenceStructAt: OFFSET_CURSOR length: 20)
+	^ CXCursorStruct fromHandle: (handle referenceStructAt: OFFSET_CURSOR length: CXCursorStruct byteSize)
 ]
 
 { #category : #'accessing structure variables' }
 CXIdxEntityRefInfoStruct >> cursor: anObject [
 	"This method was automatically generated"
-	handle structAt: OFFSET_CURSOR put: anObject getHandle length: 20.
+	handle structAt: OFFSET_CURSOR put: anObject getHandle length: CXCursorStruct byteSize
 ]
 
 { #category : #'accessing structure variables' }
@@ -64,13 +64,13 @@ CXIdxEntityRefInfoStruct >> kind: anObject [
 { #category : #'accessing structure variables' }
 CXIdxEntityRefInfoStruct >> loc [
 	"This method was automatically generated"
-	^CXIdxLocStruct fromHandle: (handle referenceStructAt: OFFSET_LOC length: 12)
+	^ CXIdxLocStruct fromHandle: (handle referenceStructAt: OFFSET_LOC length: CXIdxLocStruct byteSize)
 ]
 
 { #category : #'accessing structure variables' }
 CXIdxEntityRefInfoStruct >> loc: anObject [
 	"This method was automatically generated"
-	handle structAt: OFFSET_LOC put: anObject getHandle length: 12.
+	handle structAt: OFFSET_LOC put: anObject getHandle length: CXIdxLocStruct byteSize
 ]
 
 { #category : #'accessing structure variables' }

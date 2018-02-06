@@ -49,13 +49,13 @@ CXIdxIncludedFileInfoStruct >> filename: anObject [
 { #category : #'accessing structure variables' }
 CXIdxIncludedFileInfoStruct >> hashLoc [
 	"This method was automatically generated"
-	^CXIdxLocStruct fromHandle: (handle referenceStructAt: OFFSET_HASHLOC length: 12)
+	^ CXIdxLocStruct fromHandle: (handle referenceStructAt: OFFSET_HASHLOC length: CXIdxLocStruct byteSize)
 ]
 
 { #category : #'accessing structure variables' }
 CXIdxIncludedFileInfoStruct >> hashLoc: anObject [
 	"This method was automatically generated"
-	handle structAt: OFFSET_HASHLOC put: anObject getHandle length: 12.
+	handle structAt: OFFSET_HASHLOC put: anObject getHandle length: CXIdxLocStruct byteSize
 ]
 
 { #category : #'accessing structure variables' }

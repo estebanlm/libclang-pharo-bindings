@@ -45,11 +45,11 @@ CXIdxImportedASTFileInfoStruct >> isModule: anObject [
 { #category : #'accessing structure variables' }
 CXIdxImportedASTFileInfoStruct >> loc [
 	"This method was automatically generated"
-	^CXIdxLocStruct fromHandle: (handle referenceStructAt: OFFSET_LOC length: 12)
+	^ CXIdxLocStruct fromHandle: (handle referenceStructAt: OFFSET_LOC length: CXIdxLocStruct byteSize)
 ]
 
 { #category : #'accessing structure variables' }
 CXIdxImportedASTFileInfoStruct >> loc: anObject [
 	"This method was automatically generated"
-	handle structAt: OFFSET_LOC put: anObject getHandle length: 12.
+	handle structAt: OFFSET_LOC put: anObject getHandle length: CXIdxLocStruct byteSize
 ]
