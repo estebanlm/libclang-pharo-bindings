@@ -66,7 +66,7 @@ CLIndex >> initialize [
 { #category : #'as yet unclassified' }
 CLIndex >> translationUnit: aPCHFile [
 	| fileP |
-	fileP := NBExternalAddress fromString: aPCHFile.
+	fileP := ExternalAddress fromString: aPCHFile.
 	^ CLTranslationUnit
 		handle: (self clang createTranslationUnit: self handle ast_filename: fileP)
 		index: self

@@ -1,7 +1,7 @@
 Extension { #name : #CXIndexH }
 
 { #category : #'*LibClang-Core' }
-CXIndexH classSide >> clangVersion [
+CXIndexH class >> clangVersion [
 	| cxstr str |
 	cxstr := self uniqueInstance getClangVersion.
 	str := cxstr asString.

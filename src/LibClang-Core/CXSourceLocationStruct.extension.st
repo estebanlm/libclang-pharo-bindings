@@ -31,7 +31,7 @@ CXSourceLocationStruct >> presumedLocation [
 { #category : #'*libclang-core' }
 CXSourceLocationStruct >> spellingLocation [
 	| file line column offset |
-	file := NBExternalAddress new.
+	file := ExternalAddress new.
 	line := ByteArray new: 4.
 	column := ByteArray new: 4.
 	offset := ByteArray new: 4.
