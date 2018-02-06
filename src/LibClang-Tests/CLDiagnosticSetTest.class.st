@@ -12,10 +12,10 @@ CLDiagnosticSetTest >> testAt1 [
 	self deny: (dSet at: 1) handle isNil .
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 CLDiagnosticSetTest >> testSize [
 	| tu dSet |
 	tu := CLTranslationUnit source: 'int f0() { } '.
 	dSet := tu diagnosticSet.
-	self assert: (dSet size = 1).
+	self assert: dSet size equals: 1
 ]

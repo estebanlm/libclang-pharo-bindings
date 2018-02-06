@@ -6,5 +6,5 @@ Class {
 
 { #category : #tests }
 CLIndexTest >> testDefaultInstance [
-	self assert: CLIndex default ~~ CLIndex default.
+	self assert: CLIndex default ~~ CLIndex default
 ]

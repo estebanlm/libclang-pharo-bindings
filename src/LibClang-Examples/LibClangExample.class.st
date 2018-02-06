@@ -16,14 +16,14 @@ Class {
 
 { #category : #'as yet unclassified' }
 LibClangExample class >> stdioHFunctions [
-	"		LibClangExample stdioHFunctions 				"
+	"LibClangExample stdioHFunctions"
 
 	^ self new extractFunctions: '/usr/include/stdio.h'
 ]
 
 { #category : #'as yet unclassified' }
 LibClangExample class >> stdlibHFunctions [
-	"		LibClangExample stdlibHFunctions 				"
+	"LibClangExample stdlibHFunctions"
 
 	^ self new extractFunctions: '/usr/include/stdlib.h'
 ]

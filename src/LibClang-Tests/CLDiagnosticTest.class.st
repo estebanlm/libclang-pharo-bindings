@@ -79,25 +79,27 @@ CLDiagnosticTest >> testOption [
 
 { #category : #tests }
 CLDiagnosticTest >> testRange [
-	|tu diag range|
+	| tu diag range |
 	tu := CLTranslationUnit source: 'void f() { int i = "a" + 1; }'.
-	self assert: (tu numDiagnostics = 1 ).
+	self assert: tu numDiagnostics equals: 1.
 	diag := tu diagnosticAt: 1.
-	self assert: (diag spelling beginsWith: 'incompatible pointer to' ).
-	self assert: diag numRanges = 1.
+	self assert: (diag spelling beginsWith: 'incompatible pointer to').
+	self assert: diag numRanges equals: 1.
 	range := diag rangeAt: 1.
-	self assert: range start line = 1.
-	self assert: range start column = 20.
-	self assert: range end line = 1.
-	self assert: range end column = 27.
+	self assert: range start line equals: 1.
+	self assert: range start column equals: 20.
+	self assert: range end line equals: 1.
+	self assert: range end column equals: 27
 ]
 
 { #category : #tests }
 CLDiagnosticTest >> testSeverity [
-| tu diagnostic  |
+	| tu diagnostic |
 	tu := CLTranslationUnit source: 'int f0() { } '.
 	diagnostic := tu diagnosticAt: 1.
-	self assert: diagnostic severity = CXDiagnosticSeverityEnum CXDiagnostic_Warning.
+	self
+		assert: diagnostic severity
+		equals: CXDiagnosticSeverityEnum CXDiagnostic_Warning
 ]
 
 { #category : #tests }
@@ -113,8 +115,10 @@ CLDiagnosticTest >> testSeverityError [
 
 { #category : #tests }
 CLDiagnosticTest >> testSpelling [
-| tu diagnostic  |
+	| tu diagnostic |
 	tu := CLTranslationUnit source: 'int f0() { } '.
 	diagnostic := tu diagnosticAt: 1.
-	self assert: diagnostic spelling = 'control reaches end of non-void function'
+	self
+		assert: diagnostic spelling
+		equals: 'control reaches end of non-void function'
 ]

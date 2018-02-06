@@ -7,7 +7,7 @@ Class {
 { #category : #tests }
 CXIndexHTest >> testClangVersion [
 
-	self assert: (CXIndexH clangVersion beginsWith: 'clang version 3.9')
+	self assert: (CXIndexH clangVersion beginsWith: 'clang version 5.0')
 ]
 
 { #category : #tests }

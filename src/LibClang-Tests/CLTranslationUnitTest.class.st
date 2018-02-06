@@ -25,14 +25,14 @@ CLTranslationUnitTest >> testDiagnosticSet [
 { #category : #tests }
 CLTranslationUnitTest >> testGetFunction [
 	| tu |
-	tu := CLTranslationUnit source: 'int f42() { return 42; } '.
+	tu := CLTranslationUnit source: 'int f42() { return 42; } '
 		
 	
 ]
 
 { #category : #tests }
 CLTranslationUnitTest >> testNumDiagnostics [
-	| tu  |
+	| tu |
 	tu := CLTranslationUnit source: 'int f0() { } '.
-	self assert: tu numDiagnostics = 1
+	self assert: tu numDiagnostics equals: 1
 ]
