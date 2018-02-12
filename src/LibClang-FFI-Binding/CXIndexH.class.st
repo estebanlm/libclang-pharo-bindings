@@ -746,8 +746,8 @@ CXIndexH >> getPresumedLocation: location filename: filename line: line column: 
 	^ self ffiCall: #(void clang_getPresumedLocation(
 		CXSourceLocation location, 
 		CXString *filename, 
-		uint *line, 
-		uint *column))
+		uint32 *line, 
+		uint32 *column))
 ]
 
 { #category : #'foreign interface' }

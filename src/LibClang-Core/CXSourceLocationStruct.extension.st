@@ -12,8 +12,8 @@ CXSourceLocationStruct >> line [
 
 { #category : #'*libclang-core' }
 CXSourceLocationStruct >> presumedLocation [
-	| fileValue line column  fileName |
-	fileValue := CXStringStruct new.
+	| fileValue line column fileName |
+	fileValue := CXStringStruct externalNew.
 	line := ByteArray new: 4.
 	column := ByteArray new: 4.
 	CXIndexH uniqueInstance
@@ -21,6 +21,7 @@ CXSourceLocationStruct >> presumedLocation [
 		filename: fileValue
 		line: line
 		column: column.
+
 	fileName := fileValue asString.
 	fileValue disposeString.
 	^ {fileName.

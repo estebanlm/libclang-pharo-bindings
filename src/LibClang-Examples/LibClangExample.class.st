@@ -31,7 +31,7 @@ LibClangExample class >> stdlibHFunctions [
 { #category : #'as yet unclassified' }
 LibClangExample >> extractFunctions: aFileName [
 	self translationUnit: aFileName do: [ :tu | tu cursor visitChildren: self extractFunctionsCb ].
-	^functions 
+	^ functions 
 ]
 
 { #category : #'as yet unclassified' }
@@ -43,15 +43,15 @@ LibClangExample >> extractFunctionsCb [
 			CXChildVisitResultEnum CXChildVisit_Continue ]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #initialization }
 LibClangExample >> initialize [ 
 	super initialize.
-	functions := OrderedCollection new.
+	functions := OrderedCollection new
 ]
 
 { #category : #'as yet unclassified' }
 LibClangExample >> translationUnit: aFileName do: aBlock [
-	| idx tu  |
+	| idx tu |
 	idx := CLIndex default.
 	tu := idx translationUnitFromSource: aFileName options: {}.
 	^ aBlock value: tu
