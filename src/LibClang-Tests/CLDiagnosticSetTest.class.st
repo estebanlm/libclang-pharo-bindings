@@ -4,15 +4,15 @@ Class {
 	#category : 'LibClang-Tests'
 }
 
-{ #category : #tests }
+{ #category : #'as yet unclassified' }
 CLDiagnosticSetTest >> testAt1 [
 	| tu dSet |
 	tu := CLTranslationUnit source: 'int f0() { } '.
 	dSet := tu diagnosticSet.
-	self deny: (dSet at: 1) handle isNil
+	self deny: (dSet at: 1) handle isNil .
 ]
 
-{ #category : #tests }
+{ #category : #accessing }
 CLDiagnosticSetTest >> testSize [
 	| tu dSet |
 	tu := CLTranslationUnit source: 'int f0() { } '.

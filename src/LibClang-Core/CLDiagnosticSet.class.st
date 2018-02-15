@@ -44,12 +44,14 @@ CLDiagnosticSet >> at: anIndex [
 
 { #category : #enumerating }
 CLDiagnosticSet >> do: aBlock [
-	1 to: self size do: [ :index | aBlock value: (self at: index) ]
+
+	1 to: self size do:
+		[:index | aBlock value: (self at: index)]
 ]
 
 { #category : #accessing }
 CLDiagnosticSet >> isEmpty [
-	^ self size = 0
+	^self size = 0
 ]
 
 { #category : #accessing }

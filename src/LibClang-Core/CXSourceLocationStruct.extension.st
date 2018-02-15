@@ -2,12 +2,12 @@ Extension { #name : #CXSourceLocationStruct }
 
 { #category : #'*libclang-core' }
 CXSourceLocationStruct >> column [
-	^self presumedLocation third.
+	^ self presumedLocation third
 ]
 
 { #category : #'*libclang-core' }
 CXSourceLocationStruct >> line [
-	^self presumedLocation  second.
+	^ self presumedLocation second
 ]
 
 { #category : #'*libclang-core' }

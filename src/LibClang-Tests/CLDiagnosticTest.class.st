@@ -64,7 +64,7 @@ CLDiagnosticTest >> testNumFixIts [
 	diag := tu diagnosticAt: 1.
 	self assert: diag severity equals: CXDiagnosticSeverityEnum CXDiagnostic_Warning.
 	self assert: (diag spelling beginsWith: 'use of GNU old-style').
-	self assert: diag numFixIts equals: 1.
+	self assert: diag numFixIts equals: 1
 	
 ]
 
@@ -74,7 +74,7 @@ CLDiagnosticTest >> testOption [
 	tu := CLTranslationUnit source: 'int f(int i) { return 7; }' allWarnings: true.
 	self assert: tu numDiagnostics equals: 1.
 	diag := tu diagnosticAt: 1.
-	self assert: diag option equals: '-Wunused-parameter'.
+	self assert: diag option equals: '-Wunused-parameter'
 ]
 
 { #category : #tests }

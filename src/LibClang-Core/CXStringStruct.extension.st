@@ -2,7 +2,7 @@ Extension { #name : #CXStringStruct }
 
 { #category : #'*libclang-core' }
 CXStringStruct >> asString [
-	^ CXIndexH uniqueInstance getCString: self.
+	^ CXIndexH uniqueInstance getCString: self
 
 ]
 

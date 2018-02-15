@@ -8,8 +8,9 @@ Class {
 	#category : 'LibClang-FFI-Types'
 }
 
-{ #category : #accessing }
+{ #category : #'field definition' }
 CXStringStruct class >> fieldsDesc [
+	"self rebuildFieldAccessors"
 	^#(
 	void *data;
 	uint32 private_flags;
@@ -26,6 +27,13 @@ CXStringStruct >> data [
 CXStringStruct >> data: anObject [
 	"This method was automatically generated"
 	handle pointerAt: OFFSET_DATA put: anObject getHandle.
+]
+
+{ #category : #printing }
+CXStringStruct >> printOn: aStream [
+    self asString printOn: aStream.
+    aStream cr.
+    super printOn: aStream.
 ]
 
 { #category : #'accessing structure variables' }

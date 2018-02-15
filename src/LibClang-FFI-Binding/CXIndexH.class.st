@@ -343,8 +343,8 @@ CXIndexH >> getArraySize: t [
 ]
 
 { #category : #'foreign interface' }
-CXIndexH >> getCString: string [ 
-	^ self ffiCall: #(String clang_getCString(CXString string))
+CXIndexH >> getCString: aString [
+	^ self ffiCall: #(String clang_getCString #(CXString aString))
 ]
 
 { #category : #'foreign interface' }
@@ -374,7 +374,7 @@ CXIndexH >> getChildDiagnostics: d [
 
 { #category : #'foreign interface' }
 CXIndexH >> getClangVersion [
-	^ self ffiCall: #(CXString clang_getClangVersion())
+	^ self ffiCall: #(CXString clang_getClangVersion ())
 ]
 
 { #category : #'foreign interface' }
