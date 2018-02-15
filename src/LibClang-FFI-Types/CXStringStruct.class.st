@@ -1,3 +1,15 @@
+"
+/* The CXString type is used to return strings from the interface
+ * when the ownership of that string might differ from one call to
+ * the next. Use clang_getCString() to retrieve the string data and,
+ * once finished with the string data, call clang_disposeString()
+ * to free the string.
+ */
+typedef struct {
+  const void *data;
+  unsigned private_flags;
+} CXString;
+"
 Class {
 	#name : #CXStringStruct,
 	#superclass : #CXExternalStructure,
@@ -5,7 +17,7 @@ Class {
 		'OFFSET_DATA',
 		'OFFSET_PRIVATE_FLAGS'
 	],
-	#category : 'LibClang-FFI-Types'
+	#category : #LibClang-FFI-Types
 }
 
 { #category : #'field definition' }
@@ -31,9 +43,9 @@ CXStringStruct >> data: anObject [
 
 { #category : #printing }
 CXStringStruct >> printOn: aStream [
-    self asString printOn: aStream.
-    aStream cr.
-    super printOn: aStream.
+	self asString printOn: aStream.
+	aStream cr.
+	super printOn: aStream
 ]
 
 { #category : #'accessing structure variables' }
