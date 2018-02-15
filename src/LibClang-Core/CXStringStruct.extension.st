@@ -7,6 +7,11 @@ CXStringStruct >> asString [
 ]
 
 { #category : #'*libclang-core' }
+CXStringStruct >> autoRelease [
+    self class finalizationRegistry add: self
+]
+
+{ #category : #'*libclang-core' }
 CXStringStruct >> disposeString [
 	CXIndexH uniqueInstance disposeString: self
 ]

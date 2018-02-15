@@ -13,7 +13,7 @@ CXIndexH class >> ffiBindingOf: aTypeName [
 ]
 
 { #category : #'instance creation' }
-CXIndexH class >> new [ 
+CXIndexH class >> new [
 	self error: 'Use #uniqueInstance'
 ]
 
@@ -180,7 +180,7 @@ CXIndexH >> createCXCursorSet [
 ]
 
 { #category : #'foreign interface' }
-CXIndexH >> createIndex: excludeDeclarationsFromPCH displayDiagnostics: displayDiagnostics [ 
+CXIndexH >> createIndex: excludeDeclarationsFromPCH displayDiagnostics: displayDiagnostics [
 	^ self ffiCall: #(CXIndex clang_createIndex(int excludeDeclarationsFromPCH, int displayDiagnostics))
 ]
 

@@ -10,8 +10,9 @@ Class {
 	#category : 'LibClang-FFI-Types'
 }
 
-{ #category : #accessing }
+{ #category : #'field definition' }
 CXSourceRangeStruct class >> fieldsDesc [
+	"self rebuildFieldAccessors"
 	^#(
 	void *ptr_data1;
 	void *ptr_data2;

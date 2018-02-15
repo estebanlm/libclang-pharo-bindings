@@ -5,7 +5,7 @@ Trait {
 
 { #category : #'external library' }
 TLibClang classSide >> clang [
-	^CXIndexH uniqueInstance 
+	^CXIndexH uniqueInstance
 ]
 
 { #category : #'external library' }

@@ -11,9 +11,14 @@ Class {
 	#category : 'LibClang-Core'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #'external library' }
+CLIndex class >> clang [
+	^ CXIndexH uniqueInstance
+]
+
+{ #category : #accessing }
 CLIndex class >> default [
-	^ self new create 
+	^ self new create
 ]
 
 { #category : #finalization }
@@ -22,12 +27,12 @@ CLIndex class >> finalizeResourceData: aHandle [
 		ifFalse: [ self clang disposeIndex: aHandle ]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #'instance creation' }
 CLIndex class >> new [
-	^super new initialize 
+	^super new initialize
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #operations }
 CLIndex >> create [
 	| index |
 	index := self clang createIndex: excludePCHDecls displayDiagnostics: diags.
@@ -38,12 +43,12 @@ CLIndex >> create [
 
 { #category : #'as yet unclassified' }
 CLIndex >> displayDiagnostics [
-	diags := 1.
+	diags := 1
 ]
 
 { #category : #'as yet unclassified' }
 CLIndex >> excludeDeclarationsFromPCH [
-	excludePCHDecls := 1.
+	excludePCHDecls := 1
 ]
 
 { #category : #accessing }
@@ -56,11 +61,11 @@ CLIndex >> handle: anObject [
 	handle := anObject
 ]
 
-{ #category : #'as yet unclassified' }
-CLIndex >> initialize [ 
+{ #category : #initialization }
+CLIndex >> initialize [
 	super initialize.
 	excludePCHDecls := 0.
-	diags := 0.
+	diags := 0
 ]
 
 { #category : #'as yet unclassified' }
