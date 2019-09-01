@@ -7,7 +7,7 @@ Class {
 		'options',
 		'numDiagnostics'
 	],
-	#category : 'LibClang-Core'
+	#category : #'LibClang-Core'
 }
 
 { #category : #private }
@@ -104,7 +104,7 @@ CLTranslationUnit class >> unsavedFilesArray: anArrayOfAssociations [
 	| unsavedArray |
 
 	unsavedArray := FFIExternalArray 
-		newType: #CXUnsavedFileStruct 
+		externalNewType: #CXUnsavedFileStruct 
 		size: anArrayOfAssociations size.
 	anArrayOfAssociations withIndexDo: [ :uF :idx | 
 		unsavedArray

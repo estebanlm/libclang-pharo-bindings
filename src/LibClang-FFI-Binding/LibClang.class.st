@@ -56,7 +56,7 @@ Class {
 		'CXtime_t',
 		'TypeMap'
 	],
-	#category : 'LibClang-FFI-Binding'
+	#category : #'LibClang-FFI-Binding'
 }
 
 { #category : #'class initialization' }
@@ -214,4 +214,15 @@ LibClang >> macModuleName [
 	"Use the libclang installed by brew"
 	^ '/usr/local/Cellar/llvm/5.0.1/lib/libclang.dylib' asFileReference fullName
 	
+]
+
+{ #category : #'library path' }
+LibClang >> unix32ModuleName [
+	self error: 'Not there yet'
+]
+
+{ #category : #'library path' }
+LibClang >> unix64ModuleName [
+	"Use the libclang installed by brew"
+	^ '/usr/lib/x86_64-linux-gnu/libclang-3.8.so.1' asFileReference fullName
 ]

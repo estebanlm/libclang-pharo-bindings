@@ -4,7 +4,7 @@ Class {
 	#classInstVars : [
 		'uniqueInstance'
 	],
-	#category : 'LibClang-FFI-Binding'
+	#category : #'LibClang-FFI-Binding'
 }
 
 { #category : #'nativeboost types' }
@@ -181,7 +181,7 @@ CXIndexH >> createCXCursorSet [
 
 { #category : #'foreign interface' }
 CXIndexH >> createIndex: excludeDeclarationsFromPCH displayDiagnostics: displayDiagnostics [
-	^ self ffiCall: #(CXIndex clang_createIndex(int excludeDeclarationsFromPCH, int displayDiagnostics))
+	^ self ffiCall: #(CXIndex clang_createIndex(long excludeDeclarationsFromPCH, long displayDiagnostics))
 ]
 
 { #category : #'foreign interface' }

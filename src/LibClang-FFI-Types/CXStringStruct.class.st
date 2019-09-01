@@ -17,7 +17,7 @@ Class {
 		'OFFSET_DATA',
 		'OFFSET_PRIVATE_FLAGS'
 	],
-	#category : #LibClang-FFI-Types
+	#category : #'LibClang-FFI-Types'
 }
 
 { #category : #'field definition' }

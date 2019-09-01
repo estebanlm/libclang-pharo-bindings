@@ -1,1 +1,1 @@
-Package { #name : #LibClang-FFI-Types }
+Package { #name : #'LibClang-FFI-Types' }

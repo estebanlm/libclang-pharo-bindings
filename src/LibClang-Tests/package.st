@@ -1,1 +1,1 @@
-Package { #name : #LibClang-Tests }
+Package { #name : #'LibClang-Tests' }

@@ -1,1 +1,1 @@
-Package { #name : #LibClang-FFI-Binding }
+Package { #name : #'LibClang-FFI-Binding' }
