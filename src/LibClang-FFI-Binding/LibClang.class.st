@@ -210,10 +210,20 @@ LibClang class >> initializeUnions [
 ]
 
 { #category : #'library path' }
+LibClang >> calloutAPIClass [
+	^ TFCalloutAPI
+]
+
+{ #category : #'library path' }
 LibClang >> macModuleName [
 	"Use the libclang installed by brew"
-	^ '/usr/local/Cellar/llvm/5.0.1/lib/libclang.dylib' asFileReference fullName
+	^ '/usr/local/Cellar/llvm/8.0.0_1/lib/libclang.dylib' asFileReference fullName
 	
+]
+
+{ #category : #'library path' }
+LibClang >> runner [
+	^ TFSameThreadRunner new
 ]
 
 { #category : #'library path' }
