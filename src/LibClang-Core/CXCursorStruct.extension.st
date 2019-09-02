@@ -75,7 +75,7 @@ CXCursorStruct >> linkage [
 
 { #category : #'*libclang-core-accessing' }
 CXCursorStruct >> location [
-	^ self clang getCursorLocation: self externalCopy
+	^ self clang getCursorLocation: self externalCopy. 
 ]
 
 { #category : #'*libclang-core-types' }

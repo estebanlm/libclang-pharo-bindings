@@ -7,7 +7,7 @@ CXExternalStructure >> externalCopy [
 	((handle isKindOf: FFIExternalStructureReferenceHandle)
 		and: [ handle handle isKindOf: Alien ])
 		ifTrue: [ 
-			externalCopy := CXCursorStruct externalNew.
+			externalCopy := self class fromHandle: (ExternalAddress fromAddress: handle handle address).
 			1 to: handle handle size do:
 				[ :idx | externalCopy handle byteAt: idx put: (handle handle unsignedByteAt: idx) ].
 			^ externalCopy ].
