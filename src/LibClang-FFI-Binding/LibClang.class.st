@@ -223,7 +223,8 @@ LibClang >> macModuleName [
 
 { #category : #'library path' }
 LibClang >> runner [
-	^ TFSameThreadRunner new
+	^ super runner .
+"	^ TFSameThreadRunner new"
 ]
 
 { #category : #'library path' }

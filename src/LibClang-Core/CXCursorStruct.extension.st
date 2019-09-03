@@ -2,7 +2,7 @@ Extension { #name : #CXCursorStruct }
 
 { #category : #'*libclang-core-types' }
 CXCursorStruct >> argumentAt: i [
-	^ self clang Cursor_getArgument: self externalCopy index: i
+	^ self clang Cursor_getArgument: self index: i
 ]
 
 { #category : #'*libclang-core-types' }
@@ -70,23 +70,23 @@ CXCursorStruct >> isUnionDecl [
 
 { #category : #'*libclang-core-accessing' }
 CXCursorStruct >> linkage [
-	^ self clang getCursorLinkage: self externalCopy
+	^ self clang getCursorLinkage: self 
 ]
 
 { #category : #'*libclang-core-accessing' }
 CXCursorStruct >> location [
-	^ self clang getCursorLocation: self externalCopy. 
+	^ self clang getCursorLocation: self. 
 ]
 
 { #category : #'*libclang-core-types' }
 CXCursorStruct >> referenced [
-	^ self clang getCursorReferenced: self externalCopy
+	^ self clang getCursorReferenced: self 
 ]
 
 { #category : #'*libclang-core-accessing' }
 CXCursorStruct >> spelling [
 	| cxstr str |
-	cxstr := self clang getCursorSpelling: self externalCopy.
+	cxstr := self clang getCursorSpelling: self .
 	str := cxstr asString.
 	cxstr disposeString.
 	^ str
@@ -94,18 +94,18 @@ CXCursorStruct >> spelling [
 
 { #category : #'*libclang-core-types' }
 CXCursorStruct >> type [
-	^ self clang getCursorType:  self externalCopy
+	^ self clang getCursorType:  self
 ]
 
 { #category : #'*libclang-core-types' }
 CXCursorStruct >> typedefType [
-	^ self clang getTypedefDeclUnderlyingType:  self externalCopy
+	^ self clang getTypedefDeclUnderlyingType: self
 ]
 
 { #category : #'*libclang-core-accessing' }
 CXCursorStruct >> usr [
 	| cxstr str |
-	cxstr := self clang getCursorUSR:  self externalCopy.
+	cxstr := self clang getCursorUSR: self.
 	str := cxstr asString.
 	cxstr disposeString.
 	^ str
