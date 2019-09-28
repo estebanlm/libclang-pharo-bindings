@@ -6,6 +6,11 @@ CXSourceLocationStruct >> column [
 ]
 
 { #category : #'*libclang-core' }
+CXSourceLocationStruct >> isNull [
+	^ self ptr_data1 isNull 
+]
+
+{ #category : #'*libclang-core' }
 CXSourceLocationStruct >> line [
 	^ self presumedLocation second
 ]
@@ -13,6 +18,7 @@ CXSourceLocationStruct >> line [
 { #category : #'*libclang-core' }
 CXSourceLocationStruct >> presumedLocation [
 	| fileValue line column fileName |
+
 	fileValue := CXStringStruct externalNew.
 	line := ByteArray new: 4.
 	column := ByteArray new: 4.

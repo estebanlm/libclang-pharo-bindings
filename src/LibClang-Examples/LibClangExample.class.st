@@ -11,7 +11,7 @@ Class {
 	#instVars : [
 		'functions'
 	],
-	#category : 'LibClang-Examples'
+	#category : #'LibClang-Examples'
 }
 
 { #category : #'as yet unclassified' }
@@ -25,7 +25,7 @@ LibClangExample class >> stdioHFunctions [
 LibClangExample class >> stdlibHFunctions [
 	"LibClangExample stdlibHFunctions"
 
-	^ self new extractFunctions: '/usr/include/stdlib.h'
+	^  self new extractFunctions: '/usr/include/stdlib.h'
 ]
 
 { #category : #'as yet unclassified' }

@@ -1,13 +1,13 @@
 Class {
 	#name : #CXIndexHTest,
 	#superclass : #TestCase,
-	#category : 'LibClang-Tests'
+	#category : #'LibClang-Tests'
 }
 
 { #category : #tests }
 CXIndexHTest >> testClangVersion [
 
-	self assert: (CXIndexH clangVersion beginsWith: 'clang version 5.0')
+	self assert: (CXIndexH clangVersion beginsWith: 'clang version 8.0.0')
 ]
 
 { #category : #tests }

@@ -1,7 +1,7 @@
 Class {
 	#name : #CXFFICallback,
 	#superclass : #FFICallback,
-	#category : 'LibClang-FFI-Types'
+	#category : #'LibClang-FFI-Types'
 }
 
 { #category : #'nativeboost types' }
@@ -17,4 +17,9 @@ CXFFICallback class >> fnSpec [
 { #category : #'instance creation' }
 CXFFICallback class >> on: aBlock [
 	^ self signature: self fnSpec block: aBlock
+]
+
+{ #category : #accessing }
+CXFFICallback >> calloutAPIClass [
+	^ TFCalloutAPI
 ]

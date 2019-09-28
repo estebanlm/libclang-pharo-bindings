@@ -70,23 +70,23 @@ CXCursorStruct >> isUnionDecl [
 
 { #category : #'*libclang-core-accessing' }
 CXCursorStruct >> linkage [
-	^ self clang getCursorLinkage: self
+	^ self clang getCursorLinkage: self 
 ]
 
 { #category : #'*libclang-core-accessing' }
 CXCursorStruct >> location [
-	^ self clang getCursorLocation: self
+	^ self clang getCursorLocation: self. 
 ]
 
 { #category : #'*libclang-core-types' }
 CXCursorStruct >> referenced [
-	^self clang getCursorReferenced: self.
+	^ self clang getCursorReferenced: self 
 ]
 
 { #category : #'*libclang-core-accessing' }
 CXCursorStruct >> spelling [
 	| cxstr str |
-	cxstr := self clang getCursorSpelling: self.
+	cxstr := self clang getCursorSpelling: self .
 	str := cxstr asString.
 	cxstr disposeString.
 	^ str
@@ -94,7 +94,7 @@ CXCursorStruct >> spelling [
 
 { #category : #'*libclang-core-types' }
 CXCursorStruct >> type [
-	^ self clang getCursorType: self
+	^ self clang getCursorType:  self
 ]
 
 { #category : #'*libclang-core-types' }
@@ -113,8 +113,8 @@ CXCursorStruct >> usr [
 
 { #category : #'*libclang-core-visiting' }
 CXCursorStruct >> visitChildren: aCXCursorVisitorCb [
-	^ self clang 
+	^ self clang
 		visitChildren: self 
-		visitor: aCXCursorVisitorCb 
+		visitor: aCXCursorVisitorCb
 		client_data: ExternalAddress null
 ]

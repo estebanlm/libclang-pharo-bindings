@@ -1,1 +1,1 @@
-Package { #name : #LibClang-Core }
+Package { #name : #'LibClang-Core' }
